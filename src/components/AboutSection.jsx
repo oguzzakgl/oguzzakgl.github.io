@@ -3,20 +3,16 @@ import { motion } from 'framer-motion';
 
 const AboutSection = () => {
     const techs = [
+        { name: 'Gemini API', color: 'bg-purple-600/10 text-purple-400 border-purple-600/20' },
         { name: 'Python', color: 'bg-blue-500/10 text-blue-400 border-blue-500/20' },
-        { name: 'Pandas', color: 'bg-purple-500/10 text-purple-400 border-purple-500/20' },
-        { name: 'NumPy', color: 'bg-blue-400/10 text-blue-300 border-blue-400/20' },
-        { name: 'Scikit-learn', color: 'bg-orange-500/10 text-orange-400 border-orange-500/20' },
-        { name: 'Streamlit', color: 'bg-red-500/10 text-red-400 border-red-500/20' },
-        { name: 'Plotly', color: 'bg-indigo-500/10 text-indigo-400 border-indigo-500/20' },
-        { name: 'Seaborn', color: 'bg-teal-500/10 text-teal-400 border-teal-500/20' },
-        { name: 'Matplotlib', color: 'bg-pink-500/10 text-pink-400 border-pink-500/20' },
         { name: 'FastAPI', color: 'bg-green-600/10 text-green-400 border-green-600/20' },
-        { name: 'PostgreSQL', color: 'bg-sky-500/10 text-sky-400 border-sky-500/20' },
-        { name: 'SQLite', color: 'bg-slate-500/10 text-slate-400 border-slate-500/20' },
-        { name: 'Faker', color: 'bg-yellow-500/10 text-yellow-400 border-yellow-500/20' },
+        { name: 'Flutter', color: 'bg-sky-500/10 text-sky-400 border-sky-500/20' },
+        { name: 'React', color: 'bg-blue-600/10 text-blue-400 border-blue-600/20' },
+        { name: 'Prompt Engineering', color: 'bg-orange-500/10 text-orange-400 border-orange-500/20' },
+        { name: 'NLP', color: 'bg-indigo-500/10 text-indigo-400 border-indigo-500/20' },
+        { name: 'Supabase', color: 'bg-emerald-500/10 text-emerald-400 border-emerald-500/20' },
         { name: 'Docker', color: 'bg-blue-600/10 text-blue-400 border-blue-600/20' },
-        { name: 'Git', color: 'bg-red-600/10 text-red-400 border-red-600/20' },
+        { name: 'PostgreSQL', color: 'bg-sky-500/10 text-sky-400 border-sky-500/20' },
     ];
 
     return (
@@ -35,13 +31,13 @@ const AboutSection = () => {
                         </h2>
                         <div className="space-y-4 text-gray-400 leading-relaxed">
                             <p>
-                                Merhaba! Ben Oğuz Kaan Akgül. Bilgisayar Mühendisliği son sınıf öğrencisi olarak, veri bilimi ve yazılım geliştirme alanlarında kendimi geliştiriyorum.
+                                Merhaba! Ben Oğuz Kaan Akgül. Bilgisayar Mühendisliği son sınıf öğrencisi ve **AI App Developer** olarak, yapay zeka modellerini modern web ve mobil uygulamalara entegre etme konusuna odaklanıyorum.
                             </p>
                             <p>
-                                Karmaşık problemleri çözmekten, veriden anlamlı içgörüler çıkarmaktan ve ölçeklenebilir sistemler tasarlamaktan keyif alıyorum. Python ekosistemine (FastAPI, Pandas, Scikit-learn, Streamlit) hakimim ve veri bilimi ile backend geliştirme alanlarında aktif projeler üretiyorum.
+                                Geleneksel yazılım süreçlerini **Gemini API** ve diğer LLM servisleriyle güçlendirerek, kullanıcı deneyimini dönüştüren akıllı çözümler üretiyorum. FastAPI, React ve Flutter ekosistemlerini kullanarak ölçeklenebilir, AI destekli SaaS platformları ve mobil uygulamalar geliştiriyorum.
                             </p>
                             <p>
-                                Sürekli öğrenmeye ve yeni teknolojileri keşfetmeye olan tutkumla, yenilikçi projeler üretmeye odaklanıyorum.
+                                Sürekli öğrenmeye ve AI ajanları, semantik arama ve otonom iş akışları gibi yeni teknolojileri keşfetmeye olan tutkumla, yenilikçi ürünler üretmeye odaklanıyorum.
                             </p>
                         </div>
                     </motion.div>

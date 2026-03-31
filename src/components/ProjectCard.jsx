@@ -29,7 +29,7 @@ const ProjectCard = ({ project, index }) => {
                 </div>
 
                 <h3 className="text-xl font-bold text-white mb-2 group-hover:text-primary transition-colors">{project.title}</h3>
-                <p className="text-gray-400 text-sm mb-6 line-clamp-3">{project.description}</p>
+                <p className="text-gray-400 text-sm mb-6 whitespace-pre-line">{project.description}</p>
 
                 <div className="flex flex-wrap gap-2 mb-6">
                     {project.tags.slice(0, 3).map(tag => (
