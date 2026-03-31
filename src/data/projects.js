@@ -1,7 +1,6 @@
 import { BarChart3, Building, TrendingUp, Users, Package, Brain, Utensils, Cpu } from 'lucide-react';
 
 export const projects = [
-export const projects = [
     {
         id: 'hiresync-ai',
         title: 'HireSync AI (HR-Flow)',
@@ -41,7 +40,7 @@ export const projects = [
     {
         id: 'stock-analysis',
         title: 'Borsa Analiz Platformu',
-        category: 'Makine Öğrenmesi & Veri Bilimi',
+        category: 'AI & Finansal Analiz',
         description: 'Finansal piyasaları analiz etmek ve gelecek öngörüleri oluşturmak için tasarlanmış profesyonel bir veri platformu. Sadece veri sunmakla kalmaz, teknik analiz ve AI modellerini birleştirerek yatırımcı kararlarına veri odaklı bir bütünlük katar.\n\nTeknik Derinlik:\n• Canlı API entegrasyonu ile 8 farklı varlık sınıfından veri madenciliği.\n• Pandas ve NumPy ile MA20, MA50 ve volatilite gibi kritik finansal metriklerin hesaplanması.\n• Random Forest Regressor ile geçmiş verilerden öğrenen fiyat tahminleme motoru.\n• Plotly tabanlı interaktif görselleştirme paneli ile karmaşık verilerin anlamlandırılması.',
         tags: ['Streamlit', 'Plotly', 'Scikit-learn', 'Pandas', 'REST API'],
         icon: TrendingUp,
@@ -53,8 +52,8 @@ export const projects = [
     {
         id: 'real-estate',
         title: 'Emlak Danışmanı AI',
-        category: 'Makine Öğrenmesi',
-        description: 'Emlak piyasasının dinamiklerini simüle eden ve konut değerlemesi yapan akıllı bir analiz sistemi. Veri üretiminden model eğitimine kadar tüm aşamaları kapsayan bu proje, bir veri bilimcinin uçtan uca çalışma disiplini sergiler.\n\nÇözümün Bütünlüğü:\n• Faker ile oluşturulan 10,000+ satırlık gerçekçi sentetik veri seti üzerinde modelleme.\n• Lokasyon ve fiziksel özelliklere dayalı hassas fiyat tahminleme algoritması.\n• Keşifsel Veri Analizi (EDA) ile piyasa trendlerinin görsel olarak raporlanması.\n• Kullanıcı dostu Streamlit arayüzü ile modelin pratik kullanıma sunulması.',
+        category: 'Yapay Zeka & Tahminleme',
+        description: 'Emlak piyasasının dinamiklerini simüle eden ve konut değerlemesi yapan akıllı bir analiz sistemi. Veri üretiminden model eğitimine kadar tüm aşamaları kapsayan bu proje, bir YZ geliştiricisinin uçtan uca çalışma disiplini sergiler.\n\nÇözümün Bütünlüğü:\n• Faker ile oluşturulan 10,000+ satırlık gerçekçi sentetik veri seti üzerinde modelleme.\n• Lokasyon ve fiziksel özelliklere dayalı hassas fiyat tahminleme algoritması.\n• Keşifsel Veri Analizi (EDA) ile piyasa trendlerinin görsel olarak raporlanması.\n• Kullanıcı dostu Streamlit arayüzü ile modelin pratik kullanıma sunulması.',
         tags: ['Streamlit', 'Scikit-learn', 'Pandas', 'Numpy', 'Faker'],
         icon: Building,
         image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
@@ -77,9 +76,9 @@ export const projects = [
     {
         id: 'hr-analytics',
         title: 'İK Analitiği & Performans',
-        category: 'Veri Analizi',
-        description: 'Kurumsal verimliliği artırmak için geliştirilen çalışan churn ve performans analiz sistemi. Ham verinin işlenerek stratejik kararlara nasıl dönüştürülebileceğinin somut bir örneğidir.\n\nAnalitik Kapsam:\n• Çalışan ayrılma (attrition) risklerinin istatistiksel metotlarla tespiti.\n• Departman bazlı performans ve memnuniyet korelasyonlarının analizi.\n• Seaborn ve Matplotlib ile hazırlanan profesyonel yönetim raporları.\n• Karar vericiler için aksiyon alınabilir (actionable insights) veri sunumu.',
-        tags: ['Pandas', 'Seaborn', 'Matplotlib', 'Python', 'Veri Analizi'],
+        category: 'Yapay Zeka Destekli İK Analitiği',
+        description: 'Kurumsal verimliliği artırmak için geliştirilen çalışan churn ve performans analiz sistemi. Ham verinin işlenerek AI destekli stratejik kararlara nasıl dönüştürülebileceğinin somut bir örneğidir.\n\nAnalitik Kapsam:\n• Çalışan ayrılma (attrition) risklerinin AI metotlarıyla tespiti.\n• Departman bazlı performans ve memnuniyet korelasyonlarının analizi.\n• Seaborn ve Matplotlib ile hazırlanan profesyonel yönetim raporları.\n• Karar vericiler için AI destekli aksiyon alınabilir (actionable insights) veri sunumu.',
+        tags: ['Pandas', 'Seaborn', 'Matplotlib', 'Python', 'AI Analysis'],
         icon: Users,
         image: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
         githubLink: 'https://github.com/oguzzakgl/HRAnalytics',

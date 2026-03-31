@@ -22,7 +22,7 @@ const Home = () => {
                     >
                         <h2 className="text-4xl font-bold text-white mb-4">Öne Çıkan Projeler</h2>
                         <p className="text-gray-400 max-w-2xl">
-                            Python, Veri Bilimi ve Modern Web Teknolojileri kullanarak geliştirdiğim seçilmiş projeler.
+                            Gemini API, LLM Entegrasyonu ve Modern Web Teknolojileri kullanarak geliştirdiğim akıllı projeler.
                         </p>
                     </motion.div>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">

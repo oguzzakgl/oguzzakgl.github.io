@@ -21,7 +21,7 @@ const HeroSection = () => {
                     </h1>
 
                     <p className="text-2xl md:text-3xl text-primary font-medium mb-8">
-                        Bilgisayar Mühendisliği 4. Sınıf Öğrencisi
+                        AI App Developer & Bilgisayar Mühendisi
                     </p>
 
                     <div className="flex flex-wrap gap-3">
