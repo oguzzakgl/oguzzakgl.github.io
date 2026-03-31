@@ -31,7 +31,7 @@ const AboutSection = () => {
                         </h2>
                         <div className="space-y-4 text-gray-400 leading-relaxed">
                             <p>
-                                Merhaba! Ben Oğuz Kaan Akgül. Bilgisayar Mühendisliği son sınıf öğrencisi ve **AI App Developer** olarak, yapay zeka modellerini modern web ve mobil uygulamalara entegre etme konusuna odaklanıyorum.
+                                Merhaba! Ben Oğuz Kaan Akgül. Bilgisayar Mühendisliği son sınıf öğrencisi ve **Junior AI App Developer** olarak, yapay zeka modellerini modern web ve mobil uygulamalara entegre etme konusuna odaklanıyorum.
                             </p>
                             <p>
                                 Geleneksel yazılım süreçlerini **Gemini API** ve diğer LLM servisleriyle güçlendirerek, kullanıcı deneyimini dönüştüren akıllı çözümler üretiyorum. FastAPI, React ve Flutter ekosistemlerini kullanarak ölçeklenebilir, AI destekli SaaS platformları ve mobil uygulamalar geliştiriyorum.
