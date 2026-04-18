@@ -7,14 +7,14 @@ export default {
     theme: {
         extend: {
             colors: {
-                // Custom color palette based on "Cyber-Chic" prompt
+                // Custom color palette based on Red/Bordeaux Glassmorphism prompt
                 dark: {
                     DEFAULT: '#0a0a0a',
-                    to: '#1a0b2e' // deeper purple
+                    to: '#2a0510' // deeper bordeaux
                 },
                 primary: {
-                    DEFAULT: '#7c3aed', // Electric Violet
-                    glow: '#a855f7'     // Neon Purple
+                    DEFAULT: '#e63946', // Red
+                    glow: '#ff4d4d'     // Bright Neon Red
                 }
             },
             fontFamily: {

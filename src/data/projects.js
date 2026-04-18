@@ -56,7 +56,7 @@ export const projects = [
         description: 'Emlak piyasasının dinamiklerini simüle eden ve konut değerlemesi yapan akıllı bir analiz sistemi. Veri üretiminden model eğitimine kadar tüm aşamaları kapsayan bu proje, bir YZ geliştiricisinin uçtan uca çalışma disiplini sergiler.\n\nÇözümün Bütünlüğü:\n• Faker ile oluşturulan 10,000+ satırlık gerçekçi sentetik veri seti üzerinde modelleme.\n• Lokasyon ve fiziksel özelliklere dayalı hassas fiyat tahminleme algoritması.\n• Keşifsel Veri Analizi (EDA) ile piyasa trendlerinin görsel olarak raporlanması.\n• Kullanıcı dostu Streamlit arayüzü ile modelin pratik kullanıma sunulması.',
         tags: ['Streamlit', 'Scikit-learn', 'Pandas', 'Numpy', 'Faker'],
         icon: Building,
-        image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
+        image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1000&q=80',
         githubLink: 'https://github.com/oguzzakgl/EmlakVeriAnalizi',
         demoLink: '#',
         stats: []
@@ -68,7 +68,7 @@ export const projects = [
         description: 'Kripto para dünyasındaki volatiliteyi takip eden ve sunucu taraflı grafik üretimi yapan yüksek performanslı bir araç. Backend mimarisi ve API yönetimi konusundaki teknik hakimiyeti temsil eder.\n\nÖzellikler:\n• FastAPI ile asenkron veri işleme ve hızlı servis altyapısı.\n• CoinGecko API entegrasyonu ile gerçek zamanlı piyasa verisi takibi.\n• Sunucu tarafında (Server-side) oluşturulan dinamik Matplotlib grafikleri.\n• Finansal metriklerin Jinja2 şablon motoru ile temiz ve okunaklı sunumu.',
         tags: ['FastAPI', 'Matplotlib', 'Python', 'CoinGecko API', 'Jinja2'],
         icon: BarChart3,
-        image: 'https://images.unsplash.com/photo-1621761191319-c6fb62004040?auto=format&fit=crop&w=1000&q=80',
+        image: 'https://images.unsplash.com/photo-1518186285589-2f7649de83e0?auto=format&fit=crop&w=1000&q=80',
         githubLink: 'https://github.com/oguzzakgl/CryptoAnalysis',
         demoLink: '#',
         stats: []

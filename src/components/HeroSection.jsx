@@ -1,6 +1,20 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, Mail, Github, Linkedin, Download } from 'lucide-react';
+import { ArrowRight, Mail, Github, Linkedin, Download, Loader2 } from 'lucide-react';
+import { Canvas } from '@react-three/fiber';
+import { OrbitControls, Environment, PerspectiveCamera, ContactShadows, Html } from '@react-three/drei';
+import NewAvatar from './NewAvatar';
+
+function CanvasLoader() {
+  return (
+    <Html center>
+      <div className="flex flex-col items-center justify-center gap-4 text-primary whitespace-nowrap bg-black/50 p-6 rounded-xl backdrop-blur-md border border-white/10 shadow-2xl">
+        <Loader2 className="animate-spin" size={48} />
+        <span className="font-medium animate-pulse text-sm">3D Model Hazırlanıyor...</span>
+      </div>
+    </Html>
+  );
+}
 
 const HeroSection = () => {
     return (
@@ -42,60 +56,47 @@ const HeroSection = () => {
                             <span>Bana Ulaş</span>
                         </a>
                     </div>
+
+                    {/* Social Links Sub-row */}
+                    <div className="mt-8 flex items-center gap-6">
+                        <a href="https://github.com/oguzzakgl" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-primary transition-colors flex items-center gap-2">
+                            <Github size={20} />
+                            <span className="text-sm font-medium">GitHub</span>
+                        </a>
+                        <a href="https://linkedin.com/in/oguzkaanakgul00" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-primary transition-colors flex items-center gap-2">
+                            <Linkedin size={20} />
+                            <span className="text-sm font-medium">LinkedIn</span>
+                        </a>
+                    </div>
                 </motion.div>
 
-                {/* Right: Contact Cards */}
+                {/* Right: 3D Avatar Canvas */}
                 <motion.div
-                    initial={{ opacity: 0, scale: 0.9 }}
+                    initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 0.8, delay: 0.2 }}
-                    className="relative hidden md:flex flex-col gap-6 items-center justify-center"
+                    transition={{ duration: 1, delay: 0.2 }}
+                    className="relative h-[600px] md:h-[700px] w-full flex items-center justify-center cursor-grab active:cursor-grabbing"
                 >
-                    {/* GitHub Card */}
-                    <a
-                        href="https://github.com/oguzzakgl"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="w-full max-w-sm p-4 bg-[#1e1e1e]/50 backdrop-blur-md border border-white/10 rounded-2xl flex items-center gap-4 hover:bg-white/5 hover:border-primary/50 transition-all group"
-                    >
-                        <div className="p-3 bg-white/5 rounded-xl group-hover:bg-primary/20 transition-colors">
-                            <Github size={32} className="text-white group-hover:text-primary" />
-                        </div>
-                        <div>
-                            <h3 className="text-white font-bold">GitHub</h3>
-                            <p className="text-gray-400 text-sm group-hover:text-primary/80">github.com/oguzzakgl</p>
-                        </div>
-                    </a>
-
-                    {/* LinkedIn Card */}
-                    <a
-                        href="https://linkedin.com/in/oguzkaanakgul00"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="w-full max-w-sm p-4 bg-[#1e1e1e]/50 backdrop-blur-md border border-white/10 rounded-2xl flex items-center gap-4 hover:bg-white/5 hover:border-primary/50 transition-all group"
-                    >
-                        <div className="p-3 bg-white/5 rounded-xl group-hover:bg-primary/20 transition-colors">
-                            <Linkedin size={32} className="text-white group-hover:text-primary" />
-                        </div>
-                        <div>
-                            <h3 className="text-white font-bold">LinkedIn</h3>
-                            <p className="text-gray-400 text-sm group-hover:text-primary/80">linkedin.com/in/oguzkaanakgul00</p>
-                        </div>
-                    </a>
-
-                    {/* Mail Card */}
-                    <a
-                        href="mailto:oguzzakg@gmail.com"
-                        className="w-full max-w-sm p-4 bg-[#1e1e1e]/50 backdrop-blur-md border border-white/10 rounded-2xl flex items-center gap-4 hover:bg-white/5 hover:border-primary/50 transition-all group"
-                    >
-                        <div className="p-3 bg-white/5 rounded-xl group-hover:bg-primary/20 transition-colors">
-                            <Mail size={32} className="text-white group-hover:text-primary" />
-                        </div>
-                        <div>
-                            <h3 className="text-white font-bold">E-Posta</h3>
-                            <p className="text-gray-400 text-sm group-hover:text-primary/80">oguzzakg@gmail.com</p>
-                        </div>
-                    </a>
+                    <div className="relative h-[600px] md:h-[700px] w-full flex items-center justify-center cursor-grab active:cursor-grabbing bg-transparent">
+                        <Canvas 
+                            shadows="soft" 
+                            dpr={[1, 1.5]}
+                            gl={{ antialias: false, powerPreference: "high-performance" }}
+                            eventSource={document.body}
+                            eventPrefix="client"
+                        >
+                            <PerspectiveCamera makeDefault position={[0, 0, 8]} fov={50} />
+                            <ambientLight intensity={1.5} />
+                            <spotLight position={[10, 10, 10]} angle={0.3} penumbra={1} intensity={2} shadow-mapSize={[1024, 1024]} castShadow />
+                            <pointLight position={[-10, -10, -10]} intensity={1} />
+                            
+                            <Suspense fallback={<CanvasLoader />}>
+                                <Environment preset="city" />
+                                <NewAvatar />
+                                <ContactShadows position={[0, -2.8, 0]} opacity={0.5} scale={10} blur={2} far={4} />
+                            </Suspense>
+                        </Canvas>
+                    </div>
 
                 </motion.div>
             </div>
