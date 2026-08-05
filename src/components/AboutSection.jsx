@@ -3,16 +3,16 @@ import { motion } from 'framer-motion';
 
 const AboutSection = () => {
     const techs = [
+        { name: 'LangChain', color: 'bg-green-500/10 text-green-400 border-green-500/20' },
+        { name: 'ChromaDB / pgvector', color: 'bg-teal-500/10 text-teal-400 border-teal-500/20' },
         { name: 'Gemini API', color: 'bg-purple-600/10 text-purple-400 border-purple-600/20' },
         { name: 'Python', color: 'bg-blue-500/10 text-blue-400 border-blue-500/20' },
-        { name: 'FastAPI', color: 'bg-green-600/10 text-green-400 border-green-600/20' },
-        { name: 'Flutter', color: 'bg-sky-500/10 text-sky-400 border-sky-500/20' },
+        { name: 'FastAPI', color: 'bg-emerald-600/10 text-emerald-400 border-emerald-600/20' },
+        { name: 'RAG Architecture', color: 'bg-sky-500/10 text-sky-400 border-sky-500/20' },
         { name: 'React', color: 'bg-blue-600/10 text-blue-400 border-blue-600/20' },
-        { name: 'Prompt Engineering', color: 'bg-orange-500/10 text-orange-400 border-orange-500/20' },
-        { name: 'NLP', color: 'bg-indigo-500/10 text-indigo-400 border-indigo-500/20' },
-        { name: 'Supabase', color: 'bg-emerald-500/10 text-emerald-400 border-emerald-500/20' },
-        { name: 'Docker', color: 'bg-blue-600/10 text-blue-400 border-blue-600/20' },
+        { name: 'NLP & LLMs', color: 'bg-indigo-500/10 text-indigo-400 border-indigo-500/20' },
         { name: 'PostgreSQL', color: 'bg-sky-500/10 text-sky-400 border-sky-500/20' },
+        { name: 'Docker', color: 'bg-blue-600/10 text-blue-400 border-blue-600/20' },
     ];
 
     return (
@@ -31,13 +31,13 @@ const AboutSection = () => {
                         </h2>
                         <div className="space-y-4 text-gray-400 leading-relaxed">
                             <p>
-                                Merhaba! Ben Oğuz Kaan Akgül. Bilgisayar Mühendisliği son sınıf öğrencisi ve **Junior AI App Developer** olarak, yapay zeka modellerini modern web ve mobil uygulamalara entegre etme konusuna odaklanıyorum.
+                                Merhaba! Ben Oğuz Kaan Akgül. **Bilgisayar Mühendisi** ve **AI Engineer** olarak, Generative AI, RAG mimarileri ve yapay zeka modellerini modern kurumsal yazılım sistemlerine entegre etme konusuna odaklanıyorum.
                             </p>
                             <p>
-                                Geleneksel yazılım süreçlerini **Gemini API** ve diğer LLM servisleriyle güçlendirerek, kullanıcı deneyimini dönüştüren akıllı çözümler üretiyorum. FastAPI, React ve Flutter ekosistemlerini kullanarak ölçeklenebilir, AI destekli SaaS platformları ve mobil uygulamalar geliştiriyorum.
+                                Geleneksel yazılım süreçlerini **LangChain, Gemini API** ve LLM servisleriyle güçlendirerek, kullanıcı deneyimini dönüştüren akıllı çözümler üretiyorum. FastAPI, React ve PostgreSQL ekosistemlerini kullanarak ölçeklenebilir, AI destekli SaaS ve RAG platformları geliştiriyorum.
                             </p>
                             <p>
-                                Sürekli öğrenmeye ve AI ajanları, semantik arama ve otonom iş akışları gibi yeni teknolojileri keşfetmeye olan tutkumla, yenilikçi ürünler üretmeye odaklanıyorum.
+                                Sürekli öğrenmeye, AI ajanları (Agentic Workflows), vektör veritabanları ve otonom iş akışları gibi yeni nesil teknolojileri projelere uygulamaya odaklanıyorum.
                             </p>
                         </div>
                     </motion.div>
@@ -58,8 +58,7 @@ const AboutSection = () => {
                                     initial={{ opacity: 0, scale: 0.8 }}
                                     whileInView={{ opacity: 1, scale: 1 }}
                                     transition={{ delay: index * 0.05 }}
-                                    whileHover={{ scale: 1.05 }}
-                                    className={`px-4 py-2 rounded-lg border ${tech.color} font-medium cursor-default backdrop-blur-sm`}
+                                    className={`px-4 py-2 rounded-xl text-sm font-medium border ${tech.color}`}
                                 >
                                     {tech.name}
                                 </motion.div>

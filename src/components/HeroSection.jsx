@@ -1,20 +1,6 @@
-import React, { Suspense } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, Mail, Github, Linkedin, Download, Loader2 } from 'lucide-react';
-import { Canvas } from '@react-three/fiber';
-import { OrbitControls, Environment, PerspectiveCamera, ContactShadows, Html } from '@react-three/drei';
-import NewAvatar from './NewAvatar';
-
-function CanvasLoader() {
-  return (
-    <Html center>
-      <div className="flex flex-col items-center justify-center gap-4 text-primary whitespace-nowrap bg-black/50 p-6 rounded-xl backdrop-blur-md border border-white/10 shadow-2xl">
-        <Loader2 className="animate-spin" size={48} />
-        <span className="font-medium animate-pulse text-sm">3D Model Hazırlanıyor...</span>
-      </div>
-    </Html>
-  );
-}
+import { ArrowRight, Mail, Github, Linkedin, Download, Sparkles, Terminal, Code2, Cpu } from 'lucide-react';
 
 const HeroSection = () => {
     return (
@@ -23,19 +9,28 @@ const HeroSection = () => {
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[600px] bg-primary/20 blur-[120px] rounded-full pointer-events-none" />
             <div className="absolute bottom-0 right-0 w-[600px] h-[400px] bg-dark-to/40 blur-[100px] rounded-full pointer-events-none" />
 
-            <div className="max-w-7xl mx-auto px-6 relative z-10 w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div className="max-w-7xl mx-auto px-6 relative z-10 w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 {/* Left: Personal Info */}
                 <motion.div
                     initial={{ opacity: 0, x: -50 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8, ease: "easeOut" }}
                 >
+                    <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
+                        <Sparkles size={16} />
+                        <span>GenAI & LLM Architecture</span>
+                    </div>
+
                     <h1 className="text-5xl md:text-7xl font-bold leading-tight text-white mb-6">
                         Oğuz Kaan Akgül
                     </h1>
 
                     <p className="text-2xl md:text-3xl text-primary font-medium mb-8">
-                        Junior AI App Developer & Bilgisayar Mühendisliği Öğrencisi
+                        AI Engineer & Bilgisayar Mühendisi
+                    </p>
+
+                    <p className="text-gray-400 text-lg mb-8 leading-relaxed max-w-xl">
+                        Generative AI, LangChain, RAG mimarileri, LLM entegrasyonları ve ölçeklenebilir backend servisleri geliştiren Bilgisayar Mühendisi.
                     </p>
 
                     <div className="flex flex-wrap gap-3">
@@ -57,7 +52,7 @@ const HeroSection = () => {
                         </a>
                     </div>
 
-                    {/* Social Links Sub-row */}
+                    {/* Social Links */}
                     <div className="mt-8 flex items-center gap-6">
                         <a href="https://github.com/oguzzakgl" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-primary transition-colors flex items-center gap-2">
                             <Github size={20} />
@@ -70,34 +65,48 @@ const HeroSection = () => {
                     </div>
                 </motion.div>
 
-                {/* Right: 3D Avatar Canvas */}
+                {/* Right: Modern AI Code Card (Replaces 3D model) */}
                 <motion.div
-                    initial={{ opacity: 0, scale: 0.8 }}
+                    initial={{ opacity: 0, scale: 0.9 }}
                     animate={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 1, delay: 0.2 }}
-                    className="relative h-[600px] md:h-[700px] w-full flex items-center justify-center cursor-grab active:cursor-grabbing"
+                    transition={{ duration: 0.8, delay: 0.2 }}
+                    className="relative w-full"
                 >
-                    <div className="relative h-[600px] md:h-[700px] w-full flex items-center justify-center cursor-grab active:cursor-grabbing bg-transparent">
-                        <Canvas 
-                            shadows="soft" 
-                            dpr={[1, 1.5]}
-                            gl={{ antialias: false, powerPreference: "high-performance" }}
-                            eventSource={document.body}
-                            eventPrefix="client"
-                        >
-                            <PerspectiveCamera makeDefault position={[0, 0, 8]} fov={50} />
-                            <ambientLight intensity={1.5} />
-                            <spotLight position={[10, 10, 10]} angle={0.3} penumbra={1} intensity={2} shadow-mapSize={[1024, 1024]} castShadow />
-                            <pointLight position={[-10, -10, -10]} intensity={1} />
-                            
-                            <Suspense fallback={<CanvasLoader />}>
-                                <Environment preset="city" />
-                                <NewAvatar />
-                                <ContactShadows position={[0, -2.8, 0]} opacity={0.5} scale={10} blur={2} far={4} />
-                            </Suspense>
-                        </Canvas>
-                    </div>
+                    <div className="bg-slate-900/80 backdrop-blur-xl border border-white/10 rounded-2xl p-6 shadow-2xl overflow-hidden relative group hover:border-primary/40 transition-colors">
+                        {/* Terminal Header */}
+                        <div className="flex items-center justify-between border-b border-white/10 pb-4 mb-4">
+                            <div className="flex items-center gap-2">
+                                <div className="w-3 h-3 rounded-full bg-red-500/80" />
+                                <div className="w-3 h-3 rounded-full bg-yellow-500/80" />
+                                <div className="w-3 h-3 rounded-full bg-green-500/80" />
+                                <span className="ml-2 text-xs text-gray-400 font-mono flex items-center gap-1">
+                                    <Terminal size={12} /> ai_pipeline.py
+                                </span>
+                            </div>
+                            <span className="text-xs px-2 py-1 rounded bg-primary/20 text-primary font-mono font-medium flex items-center gap-1">
+                                <Cpu size={12} /> LangChain & Gemini
+                            </span>
+                        </div>
 
+                        {/* Terminal Content */}
+                        <div className="font-mono text-sm space-y-3 text-gray-300">
+                            <p><span className="text-purple-400">from</span> langchain_google_genai <span className="text-purple-400">import</span> ChatGoogleGenerativeAI</p>
+                            <p><span className="text-purple-400">from</span> langchain_chroma <span className="text-purple-400">import</span> Chroma</p>
+                            <p><span className="text-purple-400">from</span> langchain_classic.chains <span className="text-purple-400">import</span> create_retrieval_chain</p>
+                            
+                            <div className="pt-2 text-gray-500"># Initializing RAG Pipeline</div>
+                            <p><span className="text-blue-400">retriever</span> = vectorstore.<span className="text-yellow-400">as_retriever</span>(search_kwargs=&#123;<span className="text-green-400">"k"</span>: 3&#125;)</p>
+                            <p><span className="text-blue-400">rag_chain</span> = <span className="text-yellow-400">create_retrieval_chain</span>(retriever, document_chain)</p>
+                            
+                            <div className="pt-2 text-gray-500"># Generating Accurate Corporate Response</div>
+                            <p><span className="text-blue-400">response</span> = rag_chain.<span className="text-yellow-400">invoke</span>(&#123;<span className="text-green-400">"input"</span>: query&#125;)</p>
+                            
+                            <div className="pt-3 border-t border-white/5 text-emerald-400 flex items-center gap-2">
+                                <Code2 size={16} />
+                                <span>Status: RAG Pipeline Active & Verified</span>
+                            </div>
+                        </div>
+                    </div>
                 </motion.div>
             </div>
         </div>
