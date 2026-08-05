@@ -31,10 +31,10 @@ const AboutSection = () => {
                         </h2>
                         <div className="space-y-4 text-gray-400 leading-relaxed">
                             <p>
-                                Merhaba! Ben Oğuz Kaan Akgül. **Bilgisayar Mühendisi** ve **AI Engineer** olarak, Generative AI, RAG mimarileri ve yapay zeka modellerini modern kurumsal yazılım sistemlerine entegre etme konusuna odaklanıyorum.
+                                Merhaba! Ben Oğuz Kaan Akgül. <strong className="text-white font-semibold">Bilgisayar Mühendisi</strong> ve <strong className="text-white font-semibold">AI Engineer</strong> olarak, Generative AI, RAG mimarileri ve yapay zeka modellerini modern kurumsal yazılım sistemlerine entegre etme konusuna odaklanıyorum.
                             </p>
                             <p>
-                                Geleneksel yazılım süreçlerini **LangChain, Gemini API** ve LLM servisleriyle güçlendirerek, kullanıcı deneyimini dönüştüren akıllı çözümler üretiyorum. FastAPI, React ve PostgreSQL ekosistemlerini kullanarak ölçeklenebilir, AI destekli SaaS ve RAG platformları geliştiriyorum.
+                                Geleneksel yazılım süreçlerini <strong className="text-white font-semibold">LangChain, Gemini API</strong> ve LLM servisleriyle güçlendirerek, kullanıcı deneyimini dönüştüren akıllı çözümler üretiyorum. FastAPI, React ve PostgreSQL ekosistemlerini kullanarak ölçeklenebilir, AI destekli SaaS ve RAG platformları geliştiriyorum.
                             </p>
                             <p>
                                 Sürekli öğrenmeye, AI ajanları (Agentic Workflows), vektör veritabanları ve otonom iş akışları gibi yeni nesil teknolojileri projelere uygulamaya odaklanıyorum.
