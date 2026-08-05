@@ -21,8 +21,9 @@ export const projects = [
         tags: ['FastAPI', 'React', 'PostgreSQL', 'Tailwind', 'AI Integration'],
         icon: Building2,
         image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1000&q=80',
-        githubLink: 'https://github.com/oguzzakgl/fabricore-erp',
-        demoLink: '#',
+        githubLink: 'https://fabricore.com.tr',
+        demoLink: 'https://fabricore.com.tr',
+
         stats: []
     }
 ];
