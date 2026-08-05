@@ -2,6 +2,19 @@ import { BarChart3, Building, TrendingUp, Users, Package, Brain, Utensils, Cpu }
 
 export const projects = [
     {
+        id: 'corporate-rag-langchain',
+        title: 'Corporate AI Assistant (LangChain & RAG)',
+        category: 'Generative AI & LLM Systems',
+        description: 'LangChain, Google Gemini 2.5 Flash ve ChromaDB Vektör Veritabanı ile geliştirilmiş kurumsal döküman sohbet asistanı. PDF belgelerini anlamsal olarak parçalayarak kullanıcı sorularını döküman içi kaynak göstererek yanıtlar.\n\nÖne Çıkan Özellikler:\n• PyPDFLoader ve RecursiveCharacterTextSplitter ile akıllı döküman parçalama.\n• Google gemini-embedding-2 modeli ve ChromaDB vektör veritabanı ile yüksek hızlı anlamsal arama.\n• create_retrieval_chain ile otomatik bağlam birleştirme ve Gemini 2.5 Flash ile kurumsal yanıt üretimi.\n• FastAPI backend, Dark-Glass UI ve marked.js ile canlı Markdown render eden modern arayüz.',
+        tags: ['LangChain', 'Gemini 2.5', 'ChromaDB', 'FastAPI', 'RAG', 'Python'],
+        icon: Cpu,
+        image: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1000&q=80',
+        githubLink: 'https://github.com/oguzzakgl/corporate-rag-langchain-assistant',
+        demoLink: '#',
+        stats: []
+    },
+
+    {
         id: 'hiresync-ai',
         title: 'HireSync AI (HR-Flow)',
         category: 'AI SaaS Platformu',
