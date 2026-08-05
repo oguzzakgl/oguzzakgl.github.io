@@ -9,8 +9,6 @@ const AboutSection = () => {
         { name: 'Python', color: 'bg-blue-500/10 text-blue-400 border-blue-500/20' },
         { name: 'FastAPI', color: 'bg-emerald-600/10 text-emerald-400 border-emerald-600/20' },
         { name: 'RAG Architecture', color: 'bg-sky-500/10 text-sky-400 border-sky-500/20' },
-        { name: 'React', color: 'bg-blue-600/10 text-blue-400 border-blue-600/20' },
-        { name: 'NLP & LLMs', color: 'bg-indigo-500/10 text-indigo-400 border-indigo-500/20' },
         { name: 'PostgreSQL', color: 'bg-sky-500/10 text-sky-400 border-sky-500/20' },
         { name: 'Docker', color: 'bg-blue-600/10 text-blue-400 border-blue-600/20' },
     ];
@@ -34,7 +32,7 @@ const AboutSection = () => {
                                 Merhaba! Ben Oğuz Kaan Akgül. <strong className="text-white font-semibold">Bilgisayar Mühendisi</strong> ve <strong className="text-white font-semibold">AI Engineer</strong> olarak, Generative AI, RAG mimarileri ve yapay zeka modellerini modern kurumsal yazılım sistemlerine entegre etme konusuna odaklanıyorum.
                             </p>
                             <p>
-                                Geleneksel yazılım süreçlerini <strong className="text-white font-semibold">LangChain, Gemini API</strong> ve LLM servisleriyle güçlendirerek, kullanıcı deneyimini dönüştüren akıllı çözümler üretiyorum. FastAPI, React ve PostgreSQL ekosistemlerini kullanarak ölçeklenebilir, AI destekli SaaS ve RAG platformları geliştiriyorum.
+                                Geleneksel yazılım süreçlerini <strong className="text-white font-semibold">LangChain, Gemini API</strong> ve LLM servisleriyle güçlendirerek, kullanıcı deneyimini dönüştüren akıllı çözümler üretiyorum. FastAPI ve PostgreSQL ekosistemlerini kullanarak ölçeklenebilir, AI destekli SaaS ve RAG platformları geliştiriyorum.
                             </p>
                             <p>
                                 Sürekli öğrenmeye, AI ajanları (Agentic Workflows), vektör veritabanları ve otonom iş akışları gibi yeni nesil teknolojileri projelere uygulamaya odaklanıyorum.
