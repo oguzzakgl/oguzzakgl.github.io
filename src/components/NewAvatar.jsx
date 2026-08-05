@@ -105,4 +105,5 @@ export default function NewAvatar(props) {
   )
 }
 
-useGLTF.preload('/robot_from_the_series_love_death_and_robots.glb')
+// Preload disabled to improve initial page load speed
+// useGLTF.preload('/robot_from_the_series_love_death_and_robots.glb')

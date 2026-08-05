@@ -44,15 +44,30 @@ const ProjectCard = ({ project, index }) => {
                     )}
                 </div>
 
-                <a
-                    href={project.githubLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center text-sm font-medium text-white bg-white/10 px-4 py-2 rounded-lg hover:bg-white/20 transition-all border border-white/10 gap-2 w-full justify-center"
-                >
-                    <Github size={16} />
-                    GitHub'da Gör
-                </a>
+                {project.githubLink ? (
+                    <a
+                        href={project.githubLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center text-sm font-medium text-white bg-white/10 px-4 py-2 rounded-lg hover:bg-white/20 transition-all border border-white/10 gap-2 w-full justify-center"
+                    >
+                        <Github size={16} />
+                        GitHub'da Gör
+                    </a>
+                ) : project.demoLink && project.demoLink !== '#' ? (
+                    <a
+                        href={project.demoLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center text-sm font-medium text-white bg-primary/20 px-4 py-2 rounded-lg hover:bg-primary/30 transition-all border border-primary/30 gap-2 w-full justify-center"
+                    >
+                        Demo'ya Git
+                    </a>
+                ) : (
+                    <div className="inline-flex items-center text-sm font-medium text-gray-500 bg-white/5 px-4 py-2 rounded-lg border border-white/5 gap-2 w-full justify-center">
+                        Private Repository
+                    </div>
+                )}
             </div>
         </motion.div>
     );

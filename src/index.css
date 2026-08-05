@@ -9,6 +9,20 @@
   }
 }
 
+/* Neon glow effects */
+.neon-text {
+  text-shadow: 0 0 10px currentColor, 0 0 20px currentColor, 0 0 40px currentColor;
+}
+
+.neon-box {
+  box-shadow: 0 0 5px currentColor, 0 0 10px currentColor, 0 0 20px currentColor;
+}
+
+.neon-border {
+  border: 1px solid currentColor;
+  box-shadow: 0 0 5px currentColor, inset 0 0 5px currentColor;
+}
+
 /* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 8px;

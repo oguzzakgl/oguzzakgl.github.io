@@ -15,6 +15,13 @@ export default {
                 primary: {
                     DEFAULT: '#e63946', // Red
                     glow: '#ff4d4d'     // Bright Neon Red
+                },
+                neon: {
+                    blue: '#00f3ff',
+                    purple: '#bf00ff',
+                    green: '#00ff9f',
+                    pink: '#ff00ff',
+                    yellow: '#ffff00'
                 }
             },
             fontFamily: {
