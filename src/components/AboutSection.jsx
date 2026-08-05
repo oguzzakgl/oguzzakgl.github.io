@@ -5,7 +5,7 @@ const AboutSection = () => {
     const techs = [
         { name: 'LangChain', color: 'bg-green-500/10 text-green-400 border-green-500/20' },
         { name: 'ChromaDB / pgvector', color: 'bg-teal-500/10 text-teal-400 border-teal-500/20' },
-        { name: 'Gemini API', color: 'bg-purple-600/10 text-purple-400 border-purple-600/20' },
+        { name: 'LLM APIs', color: 'bg-purple-600/10 text-purple-400 border-purple-600/20' },
         { name: 'Python', color: 'bg-blue-500/10 text-blue-400 border-blue-500/20' },
         { name: 'FastAPI', color: 'bg-emerald-600/10 text-emerald-400 border-emerald-600/20' },
         { name: 'RAG Architecture', color: 'bg-sky-500/10 text-sky-400 border-sky-500/20' },
@@ -32,7 +32,7 @@ const AboutSection = () => {
                                 Merhaba! Ben Oğuz Kaan Akgül. <strong className="text-white font-semibold">Bilgisayar Mühendisi</strong> ve <strong className="text-white font-semibold">AI Engineer</strong> olarak, Generative AI, RAG mimarileri ve yapay zeka modellerini modern kurumsal yazılım sistemlerine entegre etme konusuna odaklanıyorum.
                             </p>
                             <p>
-                                Geleneksel yazılım süreçlerini <strong className="text-white font-semibold">LangChain, Gemini API</strong> ve LLM servisleriyle güçlendirerek, kullanıcı deneyimini dönüştüren akıllı çözümler üretiyorum. FastAPI ve PostgreSQL ekosistemlerini kullanarak ölçeklenebilir, AI destekli SaaS ve RAG platformları geliştiriyorum.
+                                Geleneksel yazılım süreçlerini <strong className="text-white font-semibold">LangChain ve LLM APIs</strong> (OpenAI, Gemini, Anthropic) servisleriyle güçlendirerek, kullanıcı deneyimini dönüştüren akıllı çözümler üretiyorum. FastAPI ve PostgreSQL ekosistemlerini kullanarak ölçeklenebilir, AI destekli SaaS ve RAG platformları geliştiriyorum.
                             </p>
                             <p>
                                 Sürekli öğrenmeye, AI ajanları (Agentic Workflows), vektör veritabanları ve otonom iş akışları gibi yeni nesil teknolojileri projelere uygulamaya odaklanıyorum.
