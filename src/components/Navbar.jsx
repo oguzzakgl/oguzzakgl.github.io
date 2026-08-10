@@ -65,8 +65,8 @@ const Navbar = () => {
                         </a>
                     ))}
                     <a 
-                        href="/oguzCV.pdf" 
-                        download="Oguz_Kaan_Akgul_CV.pdf"
+                        href="/OguzkaanAkgulCV.pdf" 
+                        download="OguzkaanAkgulCV.pdf"
                         className="px-5 py-2.5 bg-primary/10 border border-primary/30 hover:bg-primary hover:text-black text-primary rounded-full text-sm font-semibold transition-all shadow-[0_0_15px_rgba(124,58,237,0.15)] hover:shadow-[0_0_25px_rgba(124,58,237,0.4)]"
                     >
                         CV İndir
@@ -103,8 +103,8 @@ const Navbar = () => {
                                 </a>
                             ))}
                             <a 
-                                href="/oguzCV.pdf" 
-                                download="Oguz_Kaan_Akgul_CV.pdf"
+                                href="/OguzkaanAkgulCV.pdf" 
+                                download="OguzkaanAkgulCV.pdf"
                                 className="w-full text-center py-3 bg-primary/20 border border-primary/50 text-white rounded-xl font-medium mt-2"
                             >
                                 CV İndir

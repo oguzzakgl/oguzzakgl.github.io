@@ -39,8 +39,8 @@ const HeroSection = () => {
                             <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
                         </a>
                         <a
-                            href="/oguzCV.pdf"
-                            download="Oguz_Kaan_Akgul_CV.pdf"
+                            href="/OguzkaanAkgulCV.pdf"
+                            download="OguzkaanAkgulCV.pdf"
                             className="group px-8 py-3 bg-white/5 border border-white/10 hover:bg-primary/20 hover:border-primary/50 text-white rounded-full font-medium transition-all flex items-center space-x-2"
                         >
                             <Download size={18} className="group-hover:-translate-y-0.5 transition-transform" />
